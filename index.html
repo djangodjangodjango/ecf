@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="mediaCSS.css">
+    <title>Mediathèque</title>
+</head>
+<body>
+    <main>
+        <section id="movie-display">
+            <h2 class="list">Liste des films</h2>
+            <table>
+                <tr id="head">
+                    <thead>
+                        <th>Titre</th>
+                        <th>Année</th>
+                        <th>Réalisateur</th>
+                    </thead>
+                </tr>
+                <tbody id="data">
+                </tbody>
+            </table>
+        </section>
+        <section id="new-films">
+            <form>
+                <div>
+                    <label for="movie-title">Titre</label>
+                    <input id="movie-title" type="text" minlength="2" required>
+                </div>
+                <div>
+                    <label for="year">Année</label>
+                    <input id="year" type="text" maxlength="4" required>
+                </div>
+                <div>
+                    <label for="director">Réalisateur</label>
+                    <input id="director" type="tel" maxlength="15" required>
+                </div>
+                <div>
+                    <button>Ajouter</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="mediascript.js"></script>
+</body>
+</html>
